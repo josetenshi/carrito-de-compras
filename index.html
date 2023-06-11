@@ -3,17 +3,30 @@
 <head>
   <title>Carrito de Compras</title>
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-  <header class="titulo">
-    <h1>Carrito de Compras</h1>
-  </header>
-
+  <header>
+    <header>
+      <div class="logo">
+        <h1>CARRITO DE COMPRAS JOSE</h1>
+        <img src="carrito.png" alt="Logo de la tienda">
+      </div>
+      <div class="cart-container">
+        <img src="carrito.png" alt="Carrito de compras" class="cart-icon">
+      </div>
+      <div class="cart-icon-container">
+        <div class="cart-icon">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-notification-count">0</span>
+        </div>
+      </div>
+    </header>
   <!-- Barra de navegación -->
   <nav class="navegacion">
     <a href="index.html">Inicio</a>
     <a href="caculadora.html">Calculadora</a>
-    <a href="#">Productos</a>
+    <a href="productos.html">Productos</a>
   </nav>
 
   <div class="container">
@@ -21,35 +34,35 @@
       <div class="product">
         <img src="descarga (2).jfif" alt="Producto 1">
         <div class="image-overlay">
-          <h3>Iphone 13</h3>
+          <h3><a href="producto.html">Iphone 13</a></h3>
           <p>Precio: $1000</p>
-          <button class="add-to-cart" data-name="Producto 1" data-price="1000">Agregar al carrito</button>
+          <button class="add-to-cart" data-name="Iphone 13" data-price="1000">Agregar al carrito</button>
         </div>
       </div>
 
       <div class="product">
         <img src="1.jfif" alt="Producto 2">
         <div class="image-overlay">
-          <h3>Tecno Spark 7</h3>
+          <h3><a href="producto.html">Tecno Spark 7</a></h3>
           <p>Precio: $150</p>
-          <button class="add-to-cart" data-name="Producto 2" data-price="150">Agregar al carrito</button>
+          <button class="add-to-cart" data-name="Tecno Spark 7" data-price="150">Agregar al carrito</button>
         </div>
       </div>
 
       <div class="product">
         <img src="Sintitulo_87d29d76-1cc9-45b7-b305-677e5b0cedcb_600x.webp" alt="Producto 3">
         <div class="image-overlay">
-          <h3>Poco X5 Pro 3</h3>
+          <h3><a href="producto.html">Poco X5 Pro 3</a></h3>
           <p>Precio: $425</p>
-          <button class="add-to-cart" data-name="Producto 3" data-price="425">Agregar al carrito</button>
+          <button class="add-to-cart" data-name="Poco X5 Pro 3" data-price="425">Agregar al carrito</button>
         </div>
       </div>
       <div class="product">
         <img src="INFINIX-NOTE-12_.png" alt="Producto 4">
         <div class="image-overlay">
-          <h3>INFINIX NOTE 12</h3>
+          <h3><a href="producto.html">INFINIX NOTE 12</a></h3>
           <p>Precio: $250</p>
-          <button class="add-to-cart" data-name="Producto 4" data-price="250">Agregar al carrito</button>
+          <button class="add-to-cart" data-name="INFINIX NOTE 12" data-price="250">Agregar al carrito</button>
         </div>
       </div>
     </div>
@@ -60,6 +73,7 @@
       <p id="cart-total">Total: $0.00</p>
       <button id="checkout-btn" class="checkout-btn">Finalizar Compra</button>
     </div>
+    <div id="success-message" class="success-message">Su compra se ha hecho exitosamente</div>
   </div>
 
   <section>
