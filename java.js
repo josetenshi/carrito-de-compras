@@ -32,18 +32,25 @@ function addToCart(event) {
 // Función para actualizar el carrito
 function updateCart() {
   var totalPrice = 0;
+  var cartListItems = ""; // Variable para almacenar los elementos de lista del carrito
 
   for (var i = 0; i < cartItems.length; i++) {
     var item = cartItems[i];
     totalPrice += parseFloat(item.price);
+
+    // Crear un elemento de lista para el producto agregado
+    cartListItems += "<li>" + item.name + " - $" + item.price.toFixed(2) + "</li>";
   }
 
   cartTotalElement.textContent = 'Total: $' + totalPrice.toFixed(2);
 
-  // Actualiza el contador de notificaciones del carrito
+  // Mostrar los productos en la lista del carrito
+  cartList.innerHTML = cartListItems;
+
+  // Actualizar el contador de notificaciones del carrito
   cartNotificationCount.textContent = cartItems.length;
 
-  // Muestra la notificación del carrito
+  // Mostrar la notificación del carrito
   showCartNotification();
 }
 

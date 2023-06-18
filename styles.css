@@ -55,10 +55,11 @@ body {
 
 
 /* Estilos de los productos */
-.products {
+.product {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .product {
@@ -338,17 +339,6 @@ footer {
   animation: scaleButton 0.3s ease;
 }
 
-@keyframes scaleButton {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
 
 /* Estilos del mensaje de éxito */
 .success-message {
@@ -400,3 +390,69 @@ footer {
 .logo h1 {
   animation: bounce 1s ease;
 }
+/*imagenes tamaño*/
+.product img {
+  width: 200px; /* Ajusta el valor según el tamaño deseado */
+  height: 200px; /* Ajusta el valor según el tamaño deseado */
+  object-fit:cover;}
+
+/* Animación del botón */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.add-to-cart {
+  display: inline-block;
+  background-color: #ff9f00;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
+  animation: pulse 1s infinite;
+}
+
+.add-to-cart:hover {
+  background-color: #241f67;
+}
+
+.descripcion {
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  text-align: justify;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.descripcion p {
+  margin-bottom: 0;
+}
+
+.descripcion strong {
+  font-weight: bold;
+}
+
+.descripcion em {
+  font-style: italic;
+}
+
+.descripcion a {
+  color: #2a9d9a;
+  text-decoration: none;
+}
+
+.descripcion a:hover {
+  text-decoration: underline;
+}
+

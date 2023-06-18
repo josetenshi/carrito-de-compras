@@ -7,21 +7,20 @@
 </head>
 <body>
   <header>
-    <header>
-      <div class="logo">
-        <h1>CARRITO DE COMPRAS JOSE</h1>
-        <img src="carrito.png" alt="Logo de la tienda">
+    <div class="logo">
+      <h1>CARRITO DE COMPRAS JOSE</h1>
+      <img src="carrito.png" alt="Logo de la tienda">
+    </div>
+    <div class="cart-container">
+      <img src="carrito.png" alt="Carrito de compras" class="cart-icon">
+    </div>
+    <div class="cart-icon-container">
+      <div class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-notification-count">0</span>
       </div>
-      <div class="cart-container">
-        <img src="carrito.png" alt="Carrito de compras" class="cart-icon">
-      </div>
-      <div class="cart-icon-container">
-        <div class="cart-icon">
-          <i class="fas fa-shopping-cart"></i>
-          <span class="cart-notification-count">0</span>
-        </div>
-      </div>
-    </header>
+    </div>
+  </header>
   <!-- Barra de navegación -->
   <nav class="navegacion">
     <a href="index.html">Inicio</a>
@@ -29,22 +28,37 @@
     <a href="productos.html">Productos</a>
   </nav>
 
-  <div class="container">
-    <div class="products">
-      <div class="product">
-        <img src="descarga (2).jfif" alt="Producto 1">
-        <div class="image-overlay">
-          <h3><a href="producto.html">Iphone 13</a></h3>
-          <p>Precio: $1000</p>
-          <button class="add-to-cart" data-name="Iphone 13" data-price="1000">Agregar al carrito</button>
-        </div>
+  <div class="products">
+    <div class="product">
+      <div class="product-image">
+        <img src="768-iPhone_13_Pro_Max_Alpine_Green_Position-1.png" alt="Producto 1">
       </div>
-
+      <div class="image-overlay">
+        <h3><a href="producto.html">Iphone 13</a></h3>
+        <p>Precio: $1000</p>
+        <div class="descripcion">
+          <p>El Apple iPhone 13 representa una actualización menor del iPhone 12. Conservando la pantalla OLED de 6.1 pulgadas, 
+            el iPhone 13 cuenta con un procesador Apple A15 Bionic, con opciones de almacenamiento de 128GB. 256GB. o 512GB. La cámara principal del iPhone 13 es dual, 
+            con lentes wide y ultrawide de 12MP con IBIS y zoom óptico 2x, y la cámara frontal es de 12MP. El iPhone 13 tiene parlantes stereo, soporta carga rápida tanto por cable como inalámbrica, es resistente al polvo y agua, 
+            y soporta redes 5G.</p>
+        </div>
+        <button class="add-to-cart" data-name="Iphone 13" data-price="1000">Agregar al carrito</button>
+      </div>
+    </div>
+    
       <div class="product">
         <img src="1.jfif" alt="Producto 2">
         <div class="image-overlay">
           <h3><a href="producto.html">Tecno Spark 7</a></h3>
           <p>Precio: $150</p>
+          <div class="descripcion">
+            <p>
+              Tecno Spark 7 es un smartphone de 2021. Mide 164.8 x 76.1 x 9.5 mm y pesa 0 g. Tiene una pantalla IPS LCD de 6.5" pulgadas. La resolución es de 720 x 1600 y 270 ppi de densidad de píxeles.
+              La cámara frontal es Single con 8 MP. La cámara principal e Dual con 16 MP.
+              Funciona con CPU Octa-core (4x1.8 GHz Cortex-A53 & 4x1.5 GHz Cortex-A53) con memoria 32GB 2GB RAM, 64GB 3GB RAM. La batería es de 6000 mAh.
+              Desplázate hacia abajo y descubre todas las características y especificaciones que ofrece este dispositivo..
+            </p>
+        </div>
           <button class="add-to-cart" data-name="Tecno Spark 7" data-price="150">Agregar al carrito</button>
         </div>
       </div>
@@ -54,18 +68,37 @@
         <div class="image-overlay">
           <h3><a href="producto.html">Poco X5 Pro 3</a></h3>
           <p>Precio: $425</p>
+          <div class="descripcion">
+            <p>
+              El Xiaomi Poco X5 Pro 5G es un smartphone Android con una pantalla AMOLED de 6.67 pulgadas a resolución FHD+ y 
+              tasa de refresco de 120Hz. Potenciado por un procesador Snapdragon 778G, el Poco X5 Pro cuenta con hasta 8GB de RAM y hasta 256GB de almacenamiento interno 
+              expandible. La cámara trasera del Poco X5 Pro es triple con un lente principal de 108MP, y su cámara frontal es de 16MP. Una batería de 5000 mAh con carga rápida de 67W alimenta al Poco X5 Pro,
+               que completa sus características con parlantes stereo, 
+              lector de huellas lateral, resistencia al agua IP53, y Android 13.
+            </p>
+          </div>
           <button class="add-to-cart" data-name="Poco X5 Pro 3" data-price="425">Agregar al carrito</button>
         </div>
       </div>
+
       <div class="product">
         <img src="INFINIX-NOTE-12_.png" alt="Producto 4">
         <div class="image-overlay">
           <h3><a href="producto.html">INFINIX NOTE 12</a></h3>
           <p>Precio: $250</p>
+          <div class="descripcion">
+            <p>
+              Infinix Note 12 G88 es un smartphone de 2022. Mide 164.4 x 76.7 x 7.9 mm y pesa 184.5 g. Tiene una pantalla AMOLED de 6.7" pulgadas. La resolución es de 1080 x 2400 y 393 ppi de densidad de píxeles.
+              La cámara frontal es Single con 16 MP. La cámara principal e Triple con 50 MP.
+              Funciona con CPU Octa-core (2x2.0 GHz Cortex-A75 & 6x1.8 GHz Cortex-A55) con memoria 64GB 4GB RAM, 128GB 4GB RAM, 128GB 6GB RAM. La batería es de 5000 mAh.
+              Desplázate hacia abajo y descubre todas las características y especificaciones que ofrece este dispositivo..
+            </p>
+          </div>
           <button class="add-to-cart" data-name="INFINIX NOTE 12" data-price="250">Agregar al carrito</button>
         </div>
       </div>
     </div>
+
 
     <div class="cart">
       <h2>Carrito de Compras</h2>
