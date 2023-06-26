@@ -96,3 +96,11 @@ document.addEventListener('DOMContentLoaded', function () {
   var checkoutButton = document.getElementById('checkout-btn');
   checkoutButton.addEventListener('click', checkout);
 });
+
+//accion del boton//
+document.querySelector("button.button-menu-toggle")
+    .addEventListener("click", function() {
+           document.querySelector(".nav-links").
+                      classList.toggle("nav-links-responsive")
+                    }
+                      );

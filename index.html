@@ -8,12 +8,10 @@
 <body>
   <header>
     <div class="logo">
-      <h1>Tech Cart</h1>
       <img src="tech cart-fotor-bg-remover-202306182100.png" alt="Logo de la tienda">
     </div>
-    <div class="cart-container">
-      <img src="carrito.png" alt="Carrito de compras" class="cart-icon">
-    </div>
+    
+    <!--carrio de span-->
     <div class="cart-icon-container">
       <div class="cart-icon">
         <i class="fas fa-shopping-cart"></i>
@@ -21,12 +19,20 @@
       </div>
     </div>
   </header>
+  <header>
   <!-- Barra de navegación -->
-  <nav class="navegacion">
-    <a href="index.html">Inicio</a>
-    <a href="caculadora.html">Calculadora</a>
-    <a href="productos.html">Productos</a>
-  </nav>
+  <nav class="navegacion" role="navigation">
+    <ul class="nav-links">
+      <div class="cart-container">
+      <img src="carrito.png" alt="Carrito de compras" class="cart-icon">
+    </div>
+   <li><a href="index.html">Inicio</a></li> 
+   <li><a href="caculadora.html">Calculadora</a></li>
+   <li><a href="producto.html">Productos</a></li>
+  </ul>
+</nav>
+    <button class="button-menu-toggle">Menu</button>
+  </header>
 
   <div class="products">
     <div class="product">
@@ -109,16 +115,6 @@
     <div id="success-message" class="success-message">Su compra se ha hecho exitosamente</div>
   </div>
 
-  <section>
-    <img src="3bdade677ec10f02306f5df3feed749f.jpeg" alt="">
-    <img src="65b9f48163a8b491f0a409a9e0042e64.jpeg" alt="">
-    <img src="dc36c1d02dfe2ec192b7ec6d2289cb2d.jpg" alt="">
-    <img src="23.jpeg" alt="">
-    <img src="HD-wallpaper-huawei-brand-marque.jpg" alt="">
-    <img src="desktop-wallpaper-xiaomi-logo-redmi-logo.jpg" alt=" ">
-    <img src="descarga.png" alt="">   
-    <img src="d73fbcb2eb03096ab5712ffba795f7e4.png" alt="">
-  </section>
 
   <footer>
     <p>&copy; 2023 Carrito de Compras</p>

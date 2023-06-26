@@ -53,6 +53,70 @@ body {
   background-color: #2a9d9a;
 }
 
+li>a {
+  padding: 8px 24px;
+}
+
+
+li {
+  list-style-type: none;
+}
+
+
+a {
+  color: white;
+  text-decoration:none;
+}
+
+
+.nav-links{
+  display: flex;
+  align-items: center;
+}
+
+
+ /*estilos de boton de menu*/
+ .button-menu-toggle {
+  display: none;
+}
+@media (max-width: 768px) {
+  .column {
+    flex: 100%;
+  }
+
+
+  .nav-links {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+  }
+
+  .button-menu-toggle {
+    display: block;
+    background-color:white;
+    border:none;
+    border-radius: 50px;
+    padding: 0 24px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+  }   }
+
+  .nav-links.nav-links-responsive {
+    position: absolute;
+    display: flex;
+    background-color:rgb(8, 8, 8);
+    height: 100%;
+    top: 70px;
+    left: 0;
+    flex-direction: column;
+    padding-top: 200px;
+    align-items: center;
+    gap:70px;
+    font-size: 40px; }
 
 /* Estilos de los productos */
 .product {
@@ -237,13 +301,14 @@ section img:hover {
 footer {
   text-align: center;
   padding: 20px ;
-  background: linear-gradient(to bottom, #ff9f00, #241f67);
+  background: linear-gradient(to bottom,#241f67, #ff9f00 );
   color: #fff;
   font-size: 24px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border: none;
 }
 
 /* Estilos de la calculadora */
@@ -455,4 +520,41 @@ footer {
 .descripcion a:hover {
   text-decoration: underline;
 }
+
+/*estilos de la pagina producto*/
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.animated-image {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.animated-image:hover {
+  transform: scale(1.1);
+}
+
+.description {
+  text-align: center;
+  margin-top: 10px;
+  align-self: flex-end;
+}
+
+/*media para la pagina*/
+
+
+
+
 
