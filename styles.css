@@ -33,7 +33,9 @@ body {
   align-items: center;
   padding: 20px;
   background: linear-gradient(to bottom, #ff9f00, #241f67);
-}
+  }
+  
+
 
 .navegacion a {
   color: #fff;
@@ -74,37 +76,11 @@ a {
   align-items: center;
 }
 
-
- /*estilos de boton de menu*/
- .button-menu-toggle {
-  display: none;
-}
-@media (max-width: 768px) {
-  .column {
-    flex: 100%;
-  }
-
-
-  .nav-links {
-    display: none;
-  }
-}
 @media (max-width: 600px) {
   .column {
     flex: 100%;
   }
-
-  .button-menu-toggle {
-    display: block;
-    background-color:white;
-    border:none;
-    border-radius: 50px;
-    padding: 0 24px;
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 20px;
-  }   }
-
+  }
   .nav-links.nav-links-responsive {
     position: absolute;
     display: flex;
